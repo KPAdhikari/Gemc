@@ -1,0 +1,5 @@
+#! /bin/tcsh -f 
+make clean 
+make
+
+./rgf_el_energyloss /work/clas12/rg-f/mc/recon/out_gen4He_incdvcs_R_*.lund.evio.hipo

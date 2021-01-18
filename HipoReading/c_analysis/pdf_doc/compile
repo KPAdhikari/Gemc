@@ -1,0 +1,9 @@
+#! /bin/bash
+
+pdflatex rgb_D2_10GeV.tex
+pdflatex rgb_D2_10GeV.tex
+
+rm -f *.tex~ *.mtc1 *.aux *.dvi *.lof *.log *.out *.lot *.toc *.brf *.maf 
+rm -f *.mtc *.mtc0 *.nlo *.bbl *.blg
+rm -rf *.t2d *.fls *.fdb_latexmk 
+

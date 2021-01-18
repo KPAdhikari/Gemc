@@ -1,0 +1,188 @@
+%
+%---Beginning of Document---
+%
+%
+% Use 1). latex ctof_geom.tex, 2). dvipdfm ctof_geom
+%
+\documentclass[12pt]{article}
+\input{formatAndDefs}
+
+%\usepackage[dvips]{color,graphics}
+%\usepackage{longtable}
+%\usepackage{hyperref}
+%\usepackage[pdftex]{graphicx}
+%\usepackage[absolute,overlay]{textpos}
+%\setlength{\TPHorizModule}{1mm}
+%\setlength{\TPVertModule}{1mm}
+%
+%\textwidth  6.5in
+%\textheight 9.0in
+%\topmargin 0.0 in
+%\headheight 0.0in
+%\headsep 0.0in
+%\oddsidemargin 0in
+%\evensidemargin 0in
+%\parsep 0 in
+%\parindent 0in
+%\pagenumbering{arabic}
+%
+%\setcounter{secnumdepth}{5}
+%\setcounter{tocdepth}{5}
+%
+\begin{document}
+
+\title{BONuS12 Electron Energy Corrections}
+
+\vskip 0.5cm
+
+\author{M.~Hattawy and N.~Dzbenski}
+
+\date \today
+%
+\maketitle
+
+\begin{abstract}
+This document details the kinematic corrections for the electrons in run group 
+F (BONuS12).
+\end{abstract}
+
+\section{Introduction}
+
+Run Group F (E12-06-113 (BONuS12) and E12-06-113A) has been approved to collect 
+35 PAC days (100\% efficiency) of data on gaseous deuterium target with 11 GeV 
+electron beam and another five days on hydrogen and Helium-4 targets at 2.2 GeV 
+beam energy for calibration purposes. The 40~cm long target filled with 5 atm 
+deuterium gas at room temperature and the 200-300~nA electron beam will yield a 
+combined nuclear luminosity of about 2$\times$10$^{34}$cm$^{-2}$s$^{-1}$, about 
+a factor of five below the standard CLAS12 nominal luminosity.
+
+For the detection of the low-energy recoiling protons, Run Group F is going to 
+install a new and enlarged radial time projection chamber (RTPC) and target gas 
+cell assembly, very similar to the ones used by the BONuS6 (E03-012) and EG6 
+(E08-024) experiments. The RTPC detects proton recoil momenta down to a lower 
+limit of 50 MeV/c while being insensitive to minimum ionizing particles.  The 
+BONuS12 RTPC replaced the central detector's silicon tracker
+and barrel micromegas, while keeping an updated version of the forward 
+micromegas (FMT). In the updated version of the FMT, only three layers of 
+micromegas will be kept to improve the electron's reconstructed vertex 
+resolution while reducing the material in the path of the electrons.
+
+Here we present a study for the electrons' kinematic corrections using 
+simulated flat phase-space electrons. We used GEMC version 4.3.2 and COATJAVA 
+version 6.5.3.  
+
+
+\section{BONuS12 RTPC} 
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[angle=0, width=0.45\textwidth,clip,
+     trim=0mm 0mm 0mm 0mm]{../figs/el_kinematics.png}
+     \caption{ }
+    \label{fig:bonus12}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[angle=0, width=0.45\textwidth,clip,
+     trim=0mm 0mm 0mm 0mm]{../figs/el_rec_uvw.png}
+     \caption{ }
+    \label{fig:bonus12}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[angle=0, width=0.45\textwidth,clip,
+     trim=0mm 0mm 0mm 0mm]{../figs/el_EC_EC_Y_X.png}
+     \caption{ }
+    \label{fig:bonus12}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[angle=0, width=0.45\textwidth,clip,
+     trim=0mm 0mm 0mm 0mm]{../figs/el_ec_epcal.png}
+     \caption{ }
+    \label{fig:bonus12}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[angle=0, width=0.45\textwidth,clip,
+     trim=0mm 0mm 0mm 0mm]{../figs/el_nphe.png}
+     \caption{ }
+    \label{fig:bonus12}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[angle=0, width=0.45\textwidth,clip,
+     trim=0mm 0mm 0mm 0mm]{../figs/el_delta_phi_phi.png}
+     \caption{ }
+    \label{fig:bonus12}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[angle=0, width=0.45\textwidth,clip,
+     trim=0mm 0mm 0mm 0mm]{../figs/el_delta_theta_theta.png}
+     \caption{ }
+    \label{fig:bonus12}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[angle=0, width=0.45\textwidth,clip,
+     trim=0mm 0mm 0mm 0mm]{../figs/el_delta_z_z.png}
+     \caption{ }
+    \label{fig:bonus12}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[angle=0, width=0.45\textwidth,clip,
+     trim=0mm 0mm 0mm 0mm]{../figs/el_delta_p_p.png}
+     \caption{ }
+    \label{fig:bonus12}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[angle=0, width=0.45\textwidth,clip,
+     trim=0mm 0mm 0mm 0mm]{../figs/el_delta_p_phi.png}
+     \caption{ }
+    \label{fig:bonus12}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[angle=0, width=0.45\textwidth,clip,
+     trim=0mm 0mm 0mm 0mm]{../figs/el_delta_p_theta.png}
+     \caption{ }
+    \label{fig:bonus12}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[angle=0, width=0.45\textwidth,clip,
+     trim=0mm 0mm 0mm 0mm]{../figs/el_delta_p_z.png}
+     \caption{ }
+    \label{fig:bonus12}
+  \end{center}
+\end{figure}
+
+
+\end{document}
+
+

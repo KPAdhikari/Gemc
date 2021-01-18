@@ -1,0 +1,9 @@
+PROJECT: clas12
+TRACK: simulation
+JOBNAME: gemc_rtpc
+OS: centos7
+MEMORY: 1 GB
+DISK_SPACE: 6 GB
+TIME: 1440
+
+COMMAND: cd /group/bonus12/gemc/devel/ ; source gemc.env ; gemc rgf_spring2020_lund.gcard -OUTPUT="evio, /work/clas12/rg-f/mc/gemc_34118_20_11July2020.evio";

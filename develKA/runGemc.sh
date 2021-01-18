@@ -1,0 +1,4 @@
+./gemc rgf_spring2020_lund_15kEvs_B.gcard
+evio2hipo -i out_ep_34118_20_14kEvs_kaB.evio out_ep_34118_20_14kEvs_kaB.hipo
+./gemc rgf_spring2020_lund_14kEvs_B_mpid1.gcard
+evio2hipo -i out_ep_34118_20_14kEvs_kaB_mpid1.evio out_ep_34118_20_14kEvs_kaB_mpid1.hipo
