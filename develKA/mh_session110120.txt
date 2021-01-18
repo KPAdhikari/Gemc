@@ -1,1 +1,175 @@
-../develComDontDelIt/mh_session110120.txt
+Bonus12/GEMC
+
+https://gemc.jlab.org/gemc/html/docker.html
+
+=====
+/work/clas12/user_name 
+
+cp -rf /group/bonus12/gemc/devel/ .
+
+ychung@jlab.org
+cp -rf /work/clas12/mhattawy/test/devel
+scons OPT=1 -j4
+module load clas12/2.1
+source /site/env/syscshrc 
+
+source /group/clas12/packages/setup.csh
+
+./gemc rgf_spring2020_lund.gcard
+
+gemc /work/clas12/mhattawy/n_dvcs_proposal/jobs/my_gcards/clas12_bonus_jlab.gcard -USE_GUI=0 -N=15000 -INPUT_GEN_FILE=“LUND,/work/clas12/mhattawy/n_dvcs_proposal/jobs/gen_files/events_deut_run_XXX.dat” -OUTPUT=“evio, n_dvcs_bonus_XXX.evio” -RUNNO=11
+
+/w/hallb-scifs17exp/clas12/mhattawy/n_dvcs_proposal/jobs/submitting_jobs/gemc
+
+module load clas12/pro
+
+==========
+
+
+
+
+ifarm1901.jlab.org> ls /group/bonus12
+ls: cannot open directory /group/bonus12: Permission denied
+ifarm1901.jlab.org> exit
+logout
+Connection to ifarm closed.
+login2% exit
+Connection to login.jlab.org closed.
+KPAd's FunPrompt $ ssh adhikari@login.jlab.org
+adhikari@login.jlab.org's password: 
+Permission denied, please try again.
+adhikari@login.jlab.org's password: 
+Last failed login: Fri Oct 23 15:23:01 EDT 2020 from ip72-218-193-77.hr.hr.cox.net on ssh:notty
+There was 1 failed login attempt since the last successful login.
+Last login: Fri Oct 23 15:05:50 2020 from ip72-218-193-77.hr.hr.cox.net
+                         J E F F E R S O N   L A B
+ ------------------------------------------------------------------------------
+ This computer is owned by the Federal Government or is connected to a
+ network owned by the Federal Government.  It is for authorized use only.
+ Users have no explicit or implicit expectation of privacy.
+
+ Any or all uses of this system and all files on this system may be intercepted,
+ monitored, recorded, copied, audited, inspected, and disclosed to authorized
+ site, Department of Energy, and law enforcement personnel, as well as
+ authorized officials of other agencies, both domestic and foreign. By using
+ this system, the user consents to such interception, monitoring, recording,
+ copying, auditing, inspection, and disclosure at the discretion of authorized
+ site or Department of Energy personnel.
+
+ Unauthorized or improper use of this system may result in administrative
+ disciplinary action and civil and criminal penalties. By continuing to use
+ this system you indicate your awareness of and consent to these terms and
+ conditions of use. LOG OFF IMMEDIATELY if you do not agree to the conditions
+ stated in this warning.
+ ------------------------------------------------------------------------------
+ Red Hat Enterprise Linux Server release 7.9 (Maipo)
+ 
+login1% ssh -Y ifarm
+Last login: Fri Oct 23 15:05:57 2020 from login1.jlab.org
+                         J E F F E R S O N   L A B
+ ------------------------------------------------------------------------------
+ This computer is owned by the Federal Government or is connected to a
+ network owned by the Federal Government.  It is for authorized use only.
+ Users have no explicit or implicit expectation of privacy.
+
+ Any or all uses of this system and all files on this system may be intercepted,
+ monitored, recorded, copied, audited, inspected, and disclosed to authorized
+ site, Department of Energy, and law enforcement personnel, as well as
+ authorized officials of other agencies, both domestic and foreign. By using
+ this system, the user consents to such interception, monitoring, recording,
+ copying, auditing, inspection, and disclosure at the discretion of authorized
+ site or Department of Energy personnel.
+
+ Unauthorized or improper use of this system may result in administrative
+ disciplinary action and civil and criminal penalties. By continuing to use
+ this system you indicate your awareness of and consent to these terms and
+ conditions of use. LOG OFF IMMEDIATELY if you do not agree to the conditions
+ stated in this warning.
+ ------------------------------------------------------------------------------
+ CentOS Linux release 7.7.1908
+ 
+Did setenv PATH /site/bin:/site/bin:/lustre/expphy/volatile/clas/claseg4/adhikari/EG4/CompileProg/CLAS_SoftwareEG4:/lustre/expphy/volatile/clas/claseg4/adhikari/EG4/CompileProg/CLAS_SoftwareEG4/bin/LinuxRHEL7:/apps/root/PRO/root/bin:/apps/cernlib/x86_64_rhel7/2005/bin:/group/clas/tools/caldb:/lustre/expphy/volatile/clas/claseg4/adhikari/EG4/CompileProg/CLAS_SoftwareEG4/bin/LinuxRHEL7:/lustre/expphy/volatile/clas/claseg4/adhikari/EG4/CompileProg/CLAS_SoftwareEG4/packages_rhel7/scripts:/apps/root/PRO/root/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin
+
+ifarm1802.jlab.org> cd pd
+pdisk@   pdiskO0@ pdiskO1@ 
+ifarm1802.jlab.org> cd /work/cla
+clas/   clas12@ 
+ifarm1802.jlab.org> cd /work/clas12/b
+baalouch/ battagli/ bclary/   bduran/   biselli/  bjroy/    brennap/  byale/    
+ifarm1802.jlab.org> cd /work/clas12/BST_alignment/
+ifarm1802.jlab.org> cd /w
+w/    work@ 
+ifarm1802.jlab.org> cd /work/cl
+clas/   clas12@ 
+ifarm1802.jlab.org> cd /work/clas12/adhikari/Bonus12/
+ifarm1802.jlab.org> ls
+ifarm1802.jlab.org> cp -rf /group/bo
+bonus@   bonus12@ 
+ifarm1802.jlab.org> cp -rf /group/bonus12/ge
+/group/bonus12/ unreadable
+
+ifarm1802.jlab.org> cp -rf /group/bonus12/gem
+/group/bonus12/ unreadable
+
+ifarm1802.jlab.org> cp -rf /work/clas12/mhattawy/test/devel
+cp: missing destination file operand after ‘/work/clas12/mhattawy/test/devel’
+Try 'cp --help' for more information.
+ifarm1802.jlab.org> cp -rf /work/clas12/mhattawy/test/devel .
+ifarm1802.jlab.org> ls
+devel
+ifarm1802.jlab.org> du -sh
+1.1G	.
+ifarm1802.jlab.org> ls
+devel
+ifarm1802.jlab.org> ls devel/
+detectors  gemc  gemc.env  lund  mc_data.yaml  out.evio  rgf_spring2020_lund.gcard  source  sub_rgf_ep_mc
+ifarm1802.jlab.org> cd devel/source/
+ifarm1802.jlab.org> ls
+api  changeLog  fields              gemc     gemc.o     gui         lib        mirrors  parameters  README.md   sensitivity  utilities
+bin  detector   futureDevelopments  gemc.cc  generator  hitprocess  materials  output   physics     SConstruct  src
+ifarm1802.jlab.org> rm -f ge
+gemc*      gemc.cc    gemc.o     generator/ 
+ifarm1802.jlab.org> rm -f gem
+gemc*    gemc.cc  gemc.o   
+ifarm1802.jlab.org> rm -f gemc
+ifarm1802.jlab.org> ls
+api  changeLog  fields              gemc.cc  generator  hitprocess  materials  output      physics    SConstruct   src
+bin  detector   futureDevelopments  gemc.o   gui        lib         mirrors    parameters  README.md  sensitivity  utilities
+ifarm1802.jlab.org> scons OPT=1 -j4
+scons: Reading SConscript files ...
+ImportError: No module named init_env:
+  File "/w/hallb-scifs17exp/clas12/adhikari/Bonus12/devel/source/SConstruct", line 1:
+    from init_env import init_environment
+ifarm1802.jlab.org> module load clas12/2.1
+ModuleCmd_Load.c(213):ERROR:105: Unable to locate a modulefile for 'clas12/2.1'
+ifarm1802.jlab.org> source /site/env/syscshrc
+adhikari@ifarm1802.jlab.org> module load clas12/2.1
+ModuleCmd_Load.c(213):ERROR:105: Unable to locate a modulefile for 'clas12/2.1'
+adhikari@ifarm1802.jlab.org> source /group/clas12/packages/setup.csh
+adhikari@ifarm1802.jlab.org> module load clas12/2.1
+adhikari@ifarm1802.jlab.org> ls
+api  changeLog  fields              gemc.cc  generator  hitprocess  materials  output      physics    SConstruct   src
+bin  detector   futureDevelopments  gemc.o   gui        lib         mirrors    parameters  README.md  sensitivity  utilities
+adhikari@ifarm1802.jlab.org> scons OPT=1 -j4
+scons: Reading SConscript files ...
+Compiling with -O2 optimization.
+scons: done reading SConscript files.
+scons: Building targets ...
+Compiling gemc...
+scons: done building targets.
+adhikari@ifarm1802.jlab.org> ls
+api  changeLog  fields              gemc     gemc.o     gui         lib        mirrors  parameters  README.md   sensitivity  utilities
+bin  detector   futureDevelopments  gemc.cc  generator  hitprocess  materials  output   physics     SConstruct  src
+adhikari@ifarm1802.jlab.org> cd ..
+adhikari@ifarm1802.jlab.org> ls
+detectors  gemc  gemc.env  lund  mc_data.yaml  out.evio  rgf_spring2020_lund.gcard  source  sub_rgf_ep_mc
+adhikari@ifarm1802.jlab.org> rm ge
+gemc*     gemc.env* 
+adhikari@ifarm1802.jlab.org> rm gemc
+rm: remove regular file ‘gemc’? y
+adhikari@ifarm1802.jlab.org> cp source/ge
+gemc*      gemc.cc    gemc.o     generator/ 
+adhikari@ifarm1802.jlab.org> cp source/gem
+gemc*    gemc.cc  gemc.o   
+adhikari@ifarm1802.jlab.org> cp source/gemc .
+adhikari@ifarm1802.jlab.org> ./gemc rgf_spring2020_lund.gcard

@@ -1,1 +1,27 @@
-../develComDontDelIt/mh_session110120Short.txt
+Bonus12/GEMC
+
+https://gemc.jlab.org/gemc/html/docker.html
+
+=====
+/work/clas12/user_name 
+
+cp -rf /group/bonus12/gemc/devel/ .
+
+ychung@jlab.org
+cp -rf /work/clas12/mhattawy/test/devel
+scons OPT=1 -j4
+module load clas12/2.1
+source /site/env/syscshrc 
+
+source /group/clas12/packages/setup.csh
+
+./gemc rgf_spring2020_lund.gcard
+
+gemc /work/clas12/mhattawy/n_dvcs_proposal/jobs/my_gcards/clas12_bonus_jlab.gcard -USE_GUI=0 -N=15000 -INPUT_GEN_FILE=“LUND,/work/clas12/mhattawy/n_dvcs_proposal/jobs/gen_files/events_deut_run_XXX.dat” -OUTPUT=“evio, n_dvcs_bonus_XXX.evio” -RUNNO=11
+
+/w/hallb-scifs17exp/clas12/mhattawy/n_dvcs_proposal/jobs/submitting_jobs/gemc
+
+module load clas12/pro
+
+==========
+
