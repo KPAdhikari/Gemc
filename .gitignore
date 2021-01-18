@@ -1,0 +1,41 @@
+
+######## Files from develKA to be ignored by Git ###########
+#the big text/lund files are very big in size, so let's ignore them
+develKA/lund/*
+
+# the output evio and hipo files are very big too
+develKA/out*.evio
+develKA/out*.hipo
+
+# just in case they are named differently in future
+develKA/*.evio
+develKA/*.hipo
+
+######## Files from HipoReading to be ignored by Git ###########
+HipoReading/*evio
+HipoReading/*hipo
+HipoReading/Logs/*
+HipoReading/prodData/*
+HipoReading/simDataND/*
+HipoReading/c_analysis/*.o
+HipoReading/c_analysis/cfigs/*
+HipoReading/c_analysis/figs/*
+
+######## Files from HipoReading  ###########
+
+######## Files from HipoReading to be ignored by Git ###########
+
+###### Temporarily ignoring some folders ######
+BatchOp
+devel
+develND
+develTst
+hipo4cpp
+RunClara
+RunClara2
+GEMC_examples
+bonus_analysis_fromMH
+develComDontDelIt
+submitting_jobs_cpdFrm_mhattawy
+TrashTmp
+
