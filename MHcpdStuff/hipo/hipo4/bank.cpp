@@ -189,7 +189,7 @@ void bank::show(){
   printf("BANK :: NAME %24s , ROWS %6d \n",bankSchema.getName().c_str(),getRows());
   for(int i = 0; i < bankSchema.getEntries(); i++){
     //printf("%14d : ", i);
-    printf("%14d, %s : ", i, bankSchema.getEntryName(i).c_str());
+    printf("%14d, %s : ", i, bankSchema.getEntryName(i).c_str()); //kp: 1/19/21 our 13th MA
     for(int k = 0; k < bankRows; k++){
       if(bankSchema.getEntryType(i) < 4){
 	  printf("%8d ",getInt(i,k));
