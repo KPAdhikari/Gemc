@@ -33,7 +33,8 @@ git status
 #git commit -am "Update"
 git commit -am "${commitMessage}"
 #git push origin master gh-pages
-git push origin master
+#git push origin master
+git push origin main
 #git checkout master
 #rm -rf /tmp/workspace
 echo "running git status command.."
