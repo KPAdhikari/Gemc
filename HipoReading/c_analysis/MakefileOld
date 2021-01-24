@@ -2,8 +2,8 @@
 # MAKEFILE for BUILDING EXAMPLES FOR HIPO4 LIBRARY
 # AUTHOR: GAVALIAN DATE: 10/24/2018
 #********************************************************
-HIPOCFLAGS  := -I/w/hallb-scifs17exp/clas/claseg4/adhikari/Bonus12/Gemc/MHcpdStuff/hipo/hipo4
-HIPOLIBS    := -L/w/hallb-scifs17exp/clas/claseg4/adhikari/Bonus12/Gemc/MHcpdStuff/hipo/lib -lhipo4
+HIPOCFLAGS  := -I/work/clas12/mhattawy/hipo/hipo4
+HIPOLIBS    := -L/work/clas12/mhattawy/hipo/lib -lhipo4
 
 LZ4LIBS     := -L/work/clas12/mhattawy/hipo/lz4/lib -llz4
 LZ4INCLUDES := -I/work/clas12/mhattawy/hipo/lz4/lib

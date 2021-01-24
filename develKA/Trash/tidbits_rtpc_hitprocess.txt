@@ -1,0 +1,32 @@
+ifarm1802.jlab.org> grep -in "rtpc_hitprocess" source/*
+...
+source/SConstruct:116:	 hitprocess/clas12/rtpc_hitprocess.cc
+...
+ifarm1802.jlab.org> grep -in "rtpc_hitprocess" source/*/*
+...
+grep: source/hitprocess/GlueX: Is a directory
+source/hitprocess/HitProcess_MapRegister.cc:9:#include "clas12/rtpc_hitprocess.h"             ///< Radial Time Projection Chamber (RTPC)
+source/hitprocess/HitProcess_MapRegister.cc:68:	       					      	   hitMap["rtpc"]     = &rtpc_HitProcess::createHitClass;
+Binary file source/hitprocess/HitProcess_MapRegister.o matches
+...
+ifarm1802.jlab.org> grep -in "rtpc_hitprocess" source/*/*/*
+...
+source/hitprocess/clas12/rtpc_hitprocess.cc:1:#include "rtpc_hitprocess.h"
+source/hitprocess/clas12/rtpc_hitprocess.cc:13:map<string, double> rtpc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/rtpc_hitprocess.cc:283:vector<identifier>  rtpc_HitProcess :: processID(vector<identifier> id, G4Step* aStep, detector Detector)
+source/hitprocess/clas12/rtpc_hitprocess.cc:439:vector<MHit*> rtpc_HitProcess :: electronicNoise()
+source/hitprocess/clas12/rtpc_hitprocess.cc:455:map< string, vector <int> >  rtpc_HitProcess :: multiDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/rtpc_hitprocess.cc:463:map< int, vector <double> > rtpc_HitProcess :: chargeTime(MHit* aHit, int hitn)
+source/hitprocess/clas12/rtpc_hitprocess.cc:473:double rtpc_HitProcess :: voltage(double charge, double time, double forTime)
+source/hitprocess/clas12/rtpc_hitprocess.h:1:#ifndef RTPC_HITPROCESS_H
+source/hitprocess/clas12/rtpc_hitprocess.h:2:#define RTPC_HITPROCESS_H 1
+source/hitprocess/clas12/rtpc_hitprocess.h:8:/// \class rtpc_HitProcess
+source/hitprocess/clas12/rtpc_hitprocess.h:10:class rtpc_HitProcess : public HitProcess
+source/hitprocess/clas12/rtpc_hitprocess.h:14:	    ~rtpc_HitProcess(){;}
+source/hitprocess/clas12/rtpc_hitprocess.h:33:	    static HitProcess *createHitClass() {return new rtpc_HitProcess;}
+Binary file source/hitprocess/clas12/rtpc_hitprocess.o matches
+grep: source/hitprocess/clas12/svt: Is a directory
+ifarm1802.jlab.org>
+======================
+
+

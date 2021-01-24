@@ -1,0 +1,179 @@
+ifarm1802.jlab.org> grep -in "integrateDgt" source/*/*
+grep: source/api/perl: Is a directory
+grep: source/api/python: Is a directory
+grep: source/bin/Linux_CentOS7.2.1511-x86_64-gcc4.8.5: Is a directory
+grep: source/fields/symmetries: Is a directory
+grep: source/gui/img: Is a directory
+grep: source/gui/src: Is a directory
+grep: source/hitprocess/bdx: Is a directory
+grep: source/hitprocess/clas12: Is a directory
+source/hitprocess/counter_hitprocess.cc:4:map<string, double> counter_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/counter_hitprocess.h:15:	      // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/counter_hitprocess.h:16:	      map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/counter_hitprocess.o matches
+grep: source/hitprocess/eic: Is a directory
+source/hitprocess/flux_hitprocess.cc:4:map<string, double> flux_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/flux_hitprocess.h:15:		   // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/flux_hitprocess.h:16:		   map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/flux_hitprocess.o matches
+grep: source/hitprocess/GlueX: Is a directory
+grep: source/hitprocess/HPS: Is a directory
+grep: source/hitprocess/injector: Is a directory
+source/hitprocess/mirror_hitprocess.cc:4:map<string, double> mirror_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/mirror_hitprocess.h:15:	     // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/mirror_hitprocess.h:16:	     map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/mirror_hitprocess.o matches
+Binary file source/lib/libghitprocess.a matches
+source/sensitivity/HitProcess.h:10:/// - integrateDgt: returns digitized information integrated over the hit
+source/sensitivity/HitProcess.h:59:/// - integrateDgt: returns digitized information integrated over the hit
+source/sensitivity/HitProcess.h:107:   // - integrateDgt: returns digitized information integrated over the hit
+source/sensitivity/HitProcess.h:108:   virtual map<string, double> integrateDgt(MHit*, int) = 0;
+source/src/MEventAction.cc:739:	       	       		   	   		       // calling integrateDgt will also set writeHit
+source/src/MEventAction.cc:740:							       	  	  	       	    thisHitOutput.setDgtz(hitProcessRoutine->integrateDgt(aHit, h+1));
+source/src/MEventAction.cc:743:											    								   // the hitProcessRoutine variable detectorThreshold could be used in integrateDgt
+ifarm1802.jlab.org> 
+ifarm1802.jlab.org> 
+ifarm1802.jlab.org> grep -in "integrateDgt" source/*/*/*
+grep: source/api/perl/admin_io: Is a directory
+Binary file source/bin/Linux_CentOS7.2.1511-x86_64-gcc4.8.5/gemc matches
+grep: source/gui/src/docs: Is a directory
+grep: source/gui/src/images: Is a directory
+grep: source/gui/src/runControl: Is a directory
+source/hitprocess/bdx/cormo_hitprocess.cc:12:map<string, double> cormo_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/bdx/cormo_hitprocess.h:14:		 // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/bdx/cormo_hitprocess.h:15:		 map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/bdx/cormo_hitprocess.o matches
+source/hitprocess/bdx/crs_hitprocess.cc:12:map<string, double> crs_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/bdx/crs_hitprocess.h:14:	       // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/bdx/crs_hitprocess.h:15:	       map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/bdx/crs_hitprocess.o matches
+source/hitprocess/bdx/veto_hitprocess.cc:13:map<string, double> veto_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/bdx/veto_hitprocess.h:14:		// - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/bdx/veto_hitprocess.h:15:		map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/bdx/veto_hitprocess.o matches
+source/hitprocess/clas12/cnd_hitprocess.cc:125:map<string, double> cnd_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/cnd_hitprocess.h:69:		   // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/cnd_hitprocess.h:70:		   map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/cnd_hitprocess.o matches
+source/hitprocess/clas12/ctof_hitprocess.cc:219:map<string, double> ctof_HitProcess::integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/ctof_hitprocess.h:99:		    // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/ctof_hitprocess.h:100:		    map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/ctof_hitprocess.o matches
+source/hitprocess/clas12/dc_hitprocess.cc:158:map<string, double> dc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/dc_hitprocess.h:62:		  // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/dc_hitprocess.h:63:		  map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/dc_hitprocess.o matches
+source/hitprocess/clas12/ec_hitprocess.cc:159:map<string, double> ec_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/ec_hitprocess.h:74:		  // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/ec_hitprocess.h:75:		  map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/ec_hitprocess.o matches
+source/hitprocess/clas12/ecs_hitprocess.cc:27:map<string, double> ecs_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/ecs_hitprocess.h:35:		  // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/ecs_hitprocess.h:36:		  map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/ecs_hitprocess.o matches
+source/hitprocess/clas12/ft_cal_hitprocess.cc:148:map<string, double> ft_cal_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/ft_cal_hitprocess.h:79:	      // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/ft_cal_hitprocess.h:80:	      map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/ft_cal_hitprocess.o matches
+source/hitprocess/clas12/ft_hodo_hitprocess.cc:136:map<string, double> ft_hodo_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/ft_hodo_hitprocess.h:70:	       // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/ft_hodo_hitprocess.h:71:	       map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/ft_hodo_hitprocess.o matches
+source/hitprocess/clas12/ftof_hitprocess.cc:192:map<string, double> ftof_HitProcess::integrateDgt(MHit* aHit, int hitn) {
+source/hitprocess/clas12/ftof_hitprocess.h:94:		    // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/ftof_hitprocess.h:95:		    map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/ftof_hitprocess.o matches
+source/hitprocess/clas12/htcc_hitprocess.cc:103:map<string, double> htcc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/htcc_hitprocess.cc:346:	    // Code below is mostly copied from the integrateDgt(MHit*, int) method,
+source/hitprocess/clas12/htcc_hitprocess.cc:349:	    // integrateDgt, photons were added, and the digital integration was performed.
+source/hitprocess/clas12/htcc_hitprocess.h:61:		    // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/htcc_hitprocess.h:62:		    map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/htcc_hitprocess.o matches
+source/hitprocess/clas12/IC_hitprocess.cc:8:map<string, double> IC_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/IC_hitprocess.h:15:		// - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/IC_hitprocess.h:16:		map<string, double> integrateDgt(MHit*, int);
+source/hitprocess/clas12/ltcc_hitprocess.cc:60:map<string, double> ltcc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/ltcc_hitprocess.h:38:		   // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/ltcc_hitprocess.h:39:		   map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/ltcc_hitprocess.o matches
+grep: source/hitprocess/clas12/micromegas: Is a directory
+source/hitprocess/clas12/pcal_hitprocess.cc:152:map<string, double> pcal_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/pcal_hitprocess.h:71:		    // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/pcal_hitprocess.h:72:		    map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/pcal_hitprocess.o matches
+source/hitprocess/clas12/rich_hitprocess.cc:43:map<string, double> rich_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/rich_hitprocess.h:40:		   // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/rich_hitprocess.h:41:		   map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/rich_hitprocess.o matches
+source/hitprocess/clas12/rtpc_hitprocess.cc:13:map<string, double> rtpc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/rtpc_hitprocess.h:16:		   // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/rtpc_hitprocess.h:17:		   map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/rtpc_hitprocess.o matches
+grep: source/hitprocess/clas12/svt: Is a directory
+source/hitprocess/eic/eic_compton_hitprocess.cc:15:map<string, double> eic_compton_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/eic/eic_compton_hitprocess.h:15:	       // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/eic/eic_compton_hitprocess.h:16:	       map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/eic/eic_compton_hitprocess.o matches
+source/hitprocess/eic/eic_dirc_hitprocess.cc:15:map<string, double> eic_dirc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/eic/eic_dirc_hitprocess.h:15:		    // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/eic/eic_dirc_hitprocess.h:16:		    map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/eic/eic_dirc_hitprocess.o matches
+source/hitprocess/eic/eic_ec_hitprocess.cc:15:map<string, double> eic_ec_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/eic/eic_ec_hitprocess.h:15:		  // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/eic/eic_ec_hitprocess.h:16:		  map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/eic/eic_ec_hitprocess.o matches
+source/hitprocess/eic/eic_preshower_hitprocess.cc:15:map<string, double> eic_preshower_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/eic/eic_preshower_hitprocess.h:15:		 // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/eic/eic_preshower_hitprocess.h:16:		 map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/eic/eic_preshower_hitprocess.o matches
+source/hitprocess/eic/eic_rich_hitprocess.cc:15:map<string, double> eic_rich_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/eic/eic_rich_hitprocess.h:15:		    // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/eic/eic_rich_hitprocess.h:16:		    map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/eic/eic_rich_hitprocess.o matches
+source/hitprocess/GlueX/CVRT_hitprocess.cc:4:map<string, double> CVRT_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/GlueX/CVRT_hitprocess.h:15:		 // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/GlueX/CVRT_hitprocess.h:16:		 map<string, double> integrateDgt(MHit*, int);
+source/hitprocess/HPS/ECAL_hitprocess.cc:12:map<string, double> ECAL_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/HPS/ECAL_hitprocess.h:15:		// - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/HPS/ECAL_hitprocess.h:16:		map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/HPS/ECAL_hitprocess.o matches
+source/hitprocess/HPS/muon_hodo_hitprocess.cc:8:map<string, double> muon_hodo_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/HPS/muon_hodo_hitprocess.h:14:	    // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/HPS/muon_hodo_hitprocess.h:15:	    map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/HPS/muon_hodo_hitprocess.o matches
+source/hitprocess/HPS/SVT_hitprocess.cc:6:map<string, double> SVT_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/HPS/SVT_hitprocess.h:14:	      // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/HPS/SVT_hitprocess.h:15:	      map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/HPS/SVT_hitprocess.o matches
+source/hitprocess/injector/bubble_hitprocess.cc:8:map<string, double> bubble_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/injector/bubble_hitprocess.h:19:	      // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/injector/bubble_hitprocess.h:20:	      map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/injector/bubble_hitprocess.o matches
+ifarm1802.jlab.org> 
+ifarm1802.jlab.org> 
+ifarm1802.jlab.org> 
+ifarm1802.jlab.org> grep -in "integrateDgt" source/*/*/*/*
+source/hitprocess/clas12/micromegas/BMT_hitprocess.cc:116:map<string, double>  BMT_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/micromegas/BMT_hitprocess.h:53:	      // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/micromegas/BMT_hitprocess.h:54:	      map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/micromegas/BMT_hitprocess.o matches
+source/hitprocess/clas12/micromegas/FMT_hitprocess.cc:84:map<string, double>FMT_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/micromegas/FMT_hitprocess.h:40:	     // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/micromegas/FMT_hitprocess.h:41:	     map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/micromegas/FMT_hitprocess.o matches
+source/hitprocess/clas12/micromegas/ftm_hitprocess.cc:41:map<string, double> ftm_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/micromegas/ftm_hitprocess.h:38:    // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/micromegas/ftm_hitprocess.h:39:    map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/micromegas/ftm_hitprocess.o matches
+source/hitprocess/clas12/svt/bst_hitprocess.cc:42:map<string, double> bst_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+source/hitprocess/clas12/svt/bst_hitprocess.h:46:	      // - integrateDgt: returns digitized information integrated over the hit
+source/hitprocess/clas12/svt/bst_hitprocess.h:47:	      map<string, double> integrateDgt(MHit*, int);
+Binary file source/hitprocess/clas12/svt/bst_hitprocess.o matches
+ifarm1802.jlab.org> 
+ifarm1802.jlab.org> 
+ifarm1802.jlab.org> 
+ifarm1802.jlab.org> grep -in "integrateDgt" source/*/*/*/*/*
+grep: No match.
+ifarm1802.jlab.org> 
+
+
