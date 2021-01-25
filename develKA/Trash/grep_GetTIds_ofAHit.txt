@@ -1,0 +1,74 @@
+ifarm1802.jlab.org> grep -in "GetTId" detectors/*/*/*/*
+grep: detectors/basic_examples/5_Working_with_fields/ex5_1_uniform_field/field_files: Is a directory
+ifarm1802.jlab.org> 
+ifarm1802.jlab.org> grep -in "GetTId" detectors/*/*/*/*/*
+ifarm1802.jlab.org> grep -in "GetTId" source/*/*/*/*/*
+grep: No match.
+ifarm1802.jlab.org> grep -in "GetTId" source/*/*/*/*
+ifarm1802.jlab.org> grep -in "GetTId" source/*/*/*
+grep: source/api/perl/admin_io: Is a directory
+grep: source/gui/src/docs: Is a directory
+source/gui/src/gsignal.cc:280:							signal = convertVintVdouble(aHit->GetTIds());
+source/gui/src/gsignal.cc:292:												 vector<int> trks = aHit->GetTIds();
+source/gui/src/gsignal.cc:362:												 	     	        vector<int> trks = aHit->GetTIds();
+source/gui/src/gsignal.cc:377:																    	       vector<int> trks = aHit->GetTIds();
+source/gui/src/gsignal.cc:392:																	       		   	      vector<int> trks = aHit->GetTIds();
+grep: source/gui/src/images: Is a directory
+grep: source/gui/src/runControl: Is a directory
+source/hitprocess/clas12/dc_hitprocess.cc:195:	vector<int>           stepTrackId = aHit->GetTIds();
+source/hitprocess/clas12/htcc_hitprocess.cc:157:		      vector<int> tids = aHit->GetTIds(); // track ID at EACH STEP
+source/hitprocess/clas12/htcc_hitprocess.cc:360:		      vector<int> tids = aHit->GetTIds(); // track ID at EACH STEP
+source/hitprocess/clas12/ltcc_hitprocess.cc:111:		      vector<int> tids = aHit->GetTIds();      // track ID at EACH STEP
+grep: source/hitprocess/clas12/micromegas: Is a directory
+source/hitprocess/clas12/rtpc_hitprocess.cc:145:  if(aHit->GetTId() != timeShift_map.cend()->first){
+source/hitprocess/clas12/rtpc_hitprocess.cc:146:    if(aHit->GetTId()< 3) timeShift_map[aHit->GetTId()] = 0.0;
+source/hitprocess/clas12/rtpc_hitprocess.cc:147:    else timeShift_map[aHit->GetTId()] = G4RandFlat::shoot(-8000.,8000.);
+source/hitprocess/clas12/rtpc_hitprocess.cc:236:      shift_t = timeShift_map.find(aHit->GetTId())->second;
+grep: source/hitprocess/clas12/svt: Is a directory
+source/hitprocess/eic/eic_compton_hitprocess.cc:29:	dgtz["tid"]     = (double) aHit->GetTId();
+source/hitprocess/eic/eic_dirc_hitprocess.cc:29:	dgtz["tid"]     = (double) aHit->GetTId();
+source/hitprocess/eic/eic_ec_hitprocess.cc:29:		dgtz["tid"]     = (double) aHit->GetTId();
+source/hitprocess/eic/eic_preshower_hitprocess.cc:29:	dgtz["tid"]     = (double) aHit->GetTId();
+source/hitprocess/eic/eic_rich_hitprocess.cc:49:	dgtz["tid"]     = (double) aHit->GetTId();
+ifarm1802.jlab.org> grep -in "GetTId" source/*/*
+grep: source/api/perl: Is a directory
+grep: source/api/python: Is a directory
+grep: source/bin/Linux_CentOS7.2.1511-x86_64-gcc4.8.5: Is a directory
+grep: source/fields/symmetries: Is a directory
+grep: source/gui/img: Is a directory
+grep: source/gui/src: Is a directory
+grep: source/hitprocess/bdx: Is a directory
+grep: source/hitprocess/clas12: Is a directory
+source/hitprocess/counter_hitprocess.cc:20:	vector<int> tids = aHit->GetTIds();
+grep: source/hitprocess/eic: Is a directory
+grep: source/hitprocess/GlueX: Is a directory
+grep: source/hitprocess/HPS: Is a directory
+grep: source/hitprocess/injector: Is a directory
+source/sensitivity/Hit.h:115:	  inline int GetTId()                         { return trackID[0]; }
+source/sensitivity/Hit.h:116:	  inline vector<int> GetTIds()                { return trackID; }
+source/sensitivity/HitProcess.cc:79:	 	     			      raws["tid"]     = (double) aHit->GetTId();
+source/sensitivity/HitProcess.cc:119:					      vector<int>    tids = aHit->GetTIds();
+source/src/MEventAction.cc:300:						      		     	    vector<int> tids = (*MHC)[h]->GetTIds();
+source/src/MEventAction.cc:617:												vector<int> tids = aHit->GetTIds();
+source/src/MEventAction.cc:638:													    	     MPrimaries[pi].pSum.back().nphe = aHit->GetTIds().size();
+ifarm1802.jlab.org> grep -in "GetTId" source/*
+grep: source/api: Is a directory
+grep: source/bin: Is a directory
+source/changeLog:2418: - The function to get the vector<int> trackID has changed name to GetTIds to make it consistent with all the other names
+grep: source/detector: Is a directory
+grep: source/fields: Is a directory
+grep: source/generator: Is a directory
+grep: source/gui: Is a directory
+grep: source/hitprocess: Is a directory
+grep: source/lib: Is a directory
+grep: source/materials: Is a directory
+grep: source/mirrors: Is a directory
+grep: source/output: Is a directory
+grep: source/parameters: Is a directory
+grep: source/physics: Is a directory
+grep: source/sensitivity: Is a directory
+grep: source/src: Is a directory
+grep: source/utilities: Is a directory
+ifarm1802.jlab.org> pwd
+/w/hallb-scifs17exp/clas/claseg4/adhikari/Bonus12/Gemc/develKA
+ifarm1802.jlab.org> cd Trash/
