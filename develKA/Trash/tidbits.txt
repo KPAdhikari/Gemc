@@ -1,0 +1,12 @@
+
+1)
+As the grep result in tidbits_integrateDgt.txt shows, the integrateDgt method such as 
+
+map<string, double> rtpc_HitProcess :: integrateDgt(MHit* aHit, int hitn) 
+
+for each of the detectors is called from source/src/MEventAction.cc:740: as
+        thisHitOutput.setDgtz(hitProcessRoutine->integrateDgt(aHit, h+1));
+
+// - integrateDgt: returns digitized information integrated over the hit
+// calling integrateDgt will also set writeHit
+

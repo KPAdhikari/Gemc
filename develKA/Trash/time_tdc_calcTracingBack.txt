@@ -1,0 +1,79 @@
+
+################
+Inside rtpc_hitprocess.h
+################
++++++++++++ public method +++++++
+	    // - integrateDgt: returns digitized information integrated over the hit
+	    map<string, double> integrateDgt(MHit*, int);
+
++++++++++++ Time related public data members of the 'rtpc_HitProcess' class: +++++++
+	 // parameters for drift and diffustion equations for drift time, 
+	  // drift angle, and diffusion in z
+   	   float a_t, b_t, c_t, diff_at, diff_bt;
+   	    
+    
+	 // variables for storing drift times and diffusion in time
+  	  float t_2GEM2, t_2GEM3, t_2PAD, t_2END;
+  	   float sigma_t_2GEM2, sigma_t_2GEM3, sigma_t_2PAD, sigma_t_gap;
+    
+	 
+     float TPC_TZERO;
+    
+    map<int, double> timeShift_map;
+    double shift_t;
+
+
+
+
+###############
+Inside: map<string, double> rtpc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
+###############
+
+  // Establish constants
+  // NEW CONSTANTS FOR UPDATED RECONSTRUCTION
+...    
+  // Drift time from first GEM to readout pad
+  t_2GEM2 = 0.0; // 169.183;
+  sigma_t_2GEM2 = 8.72728;
+  t_2GEM3 = 0.0; //222.415;
+  sigma_t_2GEM3 = 5.62223;
+  t_2PAD = 0.0; //414.459;
+  sigma_t_2PAD = 7.58056;
+   
+...
+  t_2END = t_2GEM2 + t_2GEM3 + t_2PAD;
+  sigma_t_gap = sqrt(pow(sigma_t_2GEM2,2)+pow(sigma_t_2GEM3,2)+pow(sigma_t_2PAD,2));
+...
+  // -------------------------- TIME SHIFT for non-primary tracks ---------------------------
+  if(aHit->GetTId() != timeShift_map.cend()->first){
+    if(aHit->GetTId()< 3) timeShift_map[aHit->GetTId()] = 0.0;
+    else timeShift_map[aHit->GetTId()] = G4RandFlat::shoot(-8000.,8000.);
+  }
+...
+// -------------------------------- Addition of Diffusion -----------------------------
+          
+// calculate drift time [ns] to first GEM
+/*  The following is the complicated form that we abandon
+    double t_drift = a_t+b_t*(0.5+(-40.0+sqrt(4.0*(0.1+c_t*c_t)*(49-r0*r0)+pow((40.0-(0.1+c_t*c_t)),2)))/(2*(0.1+c_t*c_t)));
+ */
+
+ double t_drift = a_t + b_t*(7.0*7.0-r0*r0)/40.0;
+            
+ // determine sigma of drift time [ns]
+  double t_diff = sqrt(diff_at*(7.0-r0)+diff_bt*(7.0-r0)*(7.0-r0));
+....
+
+// find t_s2pad and delta_phi by gaussians
+double t_s2pad = G4RandGauss::shoot(t_drift, t_diff);
+...     
+double t_gap = G4RandGauss::shoot(t_2END, sigma_t_gap);
+...
+// time shift
+ shift_t = timeShift_map.find(aHit->GetTId())->second;		
+...
+tdc=t_s2pad+t_gap+shift_t;
+...
+dgtz["Time"]   = tdc;
+
+
+
