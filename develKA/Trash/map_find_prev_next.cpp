@@ -22,6 +22,9 @@ int main ()
   mymap['c']=150;
   mymap['d']=200;
 
+  cout<<"mymap['a'] = "<<mymap['a']<<",  mymap['d'] = "<<mymap['d']<<endl;
+
+
   std::cout << mymap.find('b')->first<<" => " << mymap.find('b')->second << '\n';
   std::cout << prev(mymap.find('b'),1)->first<<" => " << prev(mymap.find('b'),1)->second << '\n';
   std::cout << next(mymap.find('a'),2)->first<<" => " << next(mymap.find('a'),2)->second << '\n';

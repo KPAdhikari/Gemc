@@ -9,4 +9,12 @@ for each of the detectors is called from source/src/MEventAction.cc:740: as
 
 // - integrateDgt: returns digitized information integrated over the hit
 // calling integrateDgt will also set writeHit
+################
+
+
+2)
+https://gemc.jlab.org/work/doxy/2.5/_hit_8h_source.html
+
+     inline int GetTId()                         { return trackID[0]; }
+     inline vector<int> GetTIds()                { return trackID; }
 
