@@ -1,0 +1,20 @@
+This event has positive values of time:
+
+Using the file that has time_shift component commented out in the hitprocess file:
+
+./kp_hipoPrintBanks ../../develKA/out_ep_34118_20_15kEvs_kaBv2tShift0.hipo 0 1160
+
+https://www.jlab.org/Hall-B//secure/eg4/adhikari/Bonus12/SimStuff/FigsKp/rtpc_gemc_adc_time_dt70_pv00tShift0.png
+
+
+
+
+
+
+
+This also has which didn't comment out the time_shift:
+
+./kp_hipoPrintBanks ../../develKA/out_ep_34118_20_15kEvs_kaBv2.hipo 0 1160
+
+https://www.jlab.org/Hall-B//secure/eg4/adhikari/Bonus12/SimStuff/FigsKp/rtpc_gemc_adc_time_dt70_pv00Bv2.png
+

@@ -238,7 +238,7 @@ map<string, double> rtpc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
 	  // NO time shift
 	  //shift_t = 0.0;
             
-	  tdc=t_s2pad+t_gap+shift_t;
+	  tdc=t_s2pad+t_gap+shift_t; //kp:
 	  adc=1000.0*DiffEdep; //cludge for tiny ADC numbers
 
 	  double z_pos = (z_cm+delta_z)*10.0;// must be mm
