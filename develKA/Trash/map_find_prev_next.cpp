@@ -1,16 +1,11 @@
 //http://www.cplusplus.com/reference/map/map/find/ (kpa: I modified the example from here. )
 /*
-From (Source: https://stackoverflow.com/questions/10363646/compiling-c11-with-g)
 To compile c++11 with g++:
         g++ -std=c++11 your_file.cpp -o your_program 
                 or
         g++ -std=c++0x your_file.cpp -o your_program
 
-
-However, I had segmentation fault issues in latter part of the code, I guess due to the fact 
-that my 'g++' compiler is really not doing c++11 compilation, although it seemed like it had.
-
-This code ran smoothly in http://cpp.sh/
+We can also run it without compilation hassles at http://cpp.sh/
 */
 // map::find
 #include <iostream>
