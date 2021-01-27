@@ -44,7 +44,8 @@ map<string, double> rtpc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
   // --------- Updated 25 June 2020 B-field parameters ----------- //
   double a_t0 = 1470.0; // -0.607056;
   double a_t1 = 0.009; // -0.00138137;
-  double a_t2 = -9.0e05; // 1.6494e-05;
+  //double a_t2 = -9.0e05; // 1.6494e-05; //Gave crazy big -ve values to tdc or time
+  double a_t2 = -9.0e-05; // 1.6494e-05;
   double b_t0 = 3290.0; // 3183.62;
   double b_t1 = -0.0138; // -0.0269385;
   double b_t2 = -0.000332; // -0.00037645;
@@ -175,12 +176,15 @@ map<string, double> rtpc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
 	  DiffEdep = Edep[s];
 
 	  z_cm = LposZ/10.0;
-            
+	  cout<<"kp: z_cm par: "<<LposZ<<endl;
+
 	  // all in cm
 	  a_t= a_t0 + a_t1*(pow(z_cm,2)) + a_t2*(pow(z_cm,4));
 	  b_t= b_t0 + b_t1*(pow(z_cm,2)) + b_t2*(pow(z_cm,4));
 	  c_t= c_t0 + c_t1*(pow(z_cm,2)) + c_t2*(pow(z_cm,4));
-            
+	  
+	  cout<<"kp: a_t's pars: a_t0, a_t1, z_cm, a_t2: "<<a_t0<<", "<<a_t1<<", "<<z_cm<<", "<<a_t2<<endl;
+
 	  a_phi=a_phi2*(pow(z_cm,4)) + a_phi1*(pow(z_cm,2)) + a_phi0;
 	  b_phi=b_phi2*(pow(z_cm,4)) + b_phi1*(pow(z_cm,2)) + b_phi0;
 	  c_phi=c_phi2*(pow(z_cm,4)) + c_phi1*(pow(z_cm,2)) + c_phi0;
@@ -218,7 +222,7 @@ map<string, double> rtpc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
             
           // determine sigma in z [mm]
           double z_diff = sqrt(a_z*(7.0-r0)+b_z*(7.0-r0)*(7.0-r0));
-	  cout<<"kp: t_drift n pars: at_t, b_t, r0: "<<t_drift<<", "<<a_t<<", "<<b_t<<", "<<r0<<"\n";
+	  cout<<"kp: t_drift n pars: a_t, b_t, r0: "<<t_drift<<", "<<a_t<<", "<<b_t<<", "<<r0<<"\n";
 	  cout<<"kp: t_diff, diff_at: "<<t_diff<<", "<<diff_at<<endl;
 
 
