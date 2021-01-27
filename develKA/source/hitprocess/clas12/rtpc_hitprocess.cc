@@ -218,7 +218,10 @@ map<string, double> rtpc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
             
           // determine sigma in z [mm]
           double z_diff = sqrt(a_z*(7.0-r0)+b_z*(7.0-r0)*(7.0-r0));
-            
+	  cout<<"kp: t_drift n pars: at_t, b_t, r0: "<<t_drift<<", "<<a_t<<", "<<b_t<<", "<<r0<<"\n";
+	  cout<<"kp: t_diff, diff_at: "<<t_diff<<", "<<diff_at<<endl;
+
+
 	  // find t_s2pad and delta_phi by gaussians
 	  double t_s2pad = G4RandGauss::shoot(t_drift, t_diff);
 	  double delta_phi = G4RandGauss::shoot(phi_drift, phi_diff);
@@ -232,13 +235,17 @@ map<string, double> rtpc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
 	  if( phi_rad<0.0 )  phi_rad+=2.0*PI;
 	  if( phi_rad>=2.0*PI )  phi_rad-=2.0*PI;
             
+	  cout<<"kp: aHit->GetTId() = "<<aHit->GetTId()<<endl;
 	  // time shift
 	  shift_t = timeShift_map.find(aHit->GetTId())->second;
             
 	  // NO time shift
 	  //shift_t = 0.0;
-            
+
+
 	  tdc=t_s2pad+t_gap+shift_t; //kp:
+	  cout<<"kp: tdc, 3 parts: "<<tdc<<", "<<t_s2pad<<", "<<t_gap<<", "<<shift_t<<"\n";
+
 	  adc=1000.0*DiffEdep; //cludge for tiny ADC numbers
 
 	  double z_pos = (z_cm+delta_z)*10.0;// must be mm
