@@ -1,0 +1,43 @@
+{"name":"rgf-r-adhikari-34118","jobs":[
+{
+  "os": "general",
+  "name": "rgf-r-adhikari-34118-p0-r-00001",
+  "phase": 0,
+  "project": "clas12",
+  "track": "reconstruction",
+  "shell": "/bin/tcsh",
+  "cpuCores": 16,
+  "diskBytes": 3000000000,
+  "ramBytes": 12000000000,
+  "timeSecs": 86400,
+  "tags": {
+    "mode": "recon",
+    "run": "034118",
+    "file": "00000",
+    "outDir": "/work/clas12/byale/simulation/cook//recon/034118/"
+  },
+  "command": "unalias -a ; mkdir -p /farm_out/byale/rgf-r-adhikari-34118 ; touch /farm_out/byale/rgf-r-adhikari-34118 ;env | egrep -e SWIF -e SLURM ;echo $PWD ; pwd ;expr $PWD : ^/scratch/slurm && setenv CCDB_CONNECTION \"mysql://clas12reader@clasdb-farm.jlab.org/clas12\" && setenv JAVA_OPTS \"-Xmx10g -Xms8g\" && setenv CLARA_HOME \"/group/clas12/packages/clara/4.3.12_6.5.11\" && setenv RCDB_CONNECTION \"mysql://rcdb@clasdb-farm.jlab.org/rcdb\" && setenv MALLOC_ARENA_MAX \"2\" && ls -l && mkdir -p /work/clas12/byale/simulation/cook//recon/034118  && ( ./clara.sh -t 16 rgf-r-adhikari-34118-p0-r-00000 )",
+  "input": [
+    {
+      "remote": "file:/u/group/clas12/packages/clas12-workflow/dev/lib/clas12/../scripts/clara.sh",
+      "local": "clara.sh"
+    },
+    {
+      "remote": "file:/work/clas12/byale/simulation/yaml/rgf-spring2020_mc.yaml",
+      "local": "clara.yaml"
+    },
+    {
+      "remote": "file:/work/clas12/byale/simulation/cook/gemc_hipo/034118/clas_034118.evio.00000.hipo",
+      "local": "clas_034118.evio.00000.hipo"
+    }
+  ],
+  "output": [
+    {
+      "remote": "file:/work/clas12/byale/simulation/cook//recon/034118//rec_clas_034118.evio.00000.hipo",
+      "local": "rec_clas_034118.evio.00000.hipo"
+    }
+  ],
+  "stdout": "file:/farm_out/byale/rgf-r-adhikari-34118/rgf-r-adhikari-34118-p0-r-00001_r034118_f00000.out",
+  "stderr": "file:/farm_out/byale/rgf-r-adhikari-34118/rgf-r-adhikari-34118-p0-r-00001_r034118_f00000.err"
+}
+]}

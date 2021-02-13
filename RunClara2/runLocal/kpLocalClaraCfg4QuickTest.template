@@ -1,0 +1,11 @@
+set servicesFile        /w/hallb-scifs17exp/clas/claseg4/adhikari/Bonus12/Gemc/RunClara2/ClaraUserData/config/rgfSpring2020mcBY.yaml
+#set servicesFile       /w/hallb-scifs17exp/clas/claseg4/adhikari/Bonus12/Gemc/RunClara2/runLocal/FromBradleyYale/rgf-spring2020_mc.yaml
+set fileList            /w/hallb-scifs17exp/clas/claseg4/adhikari/Bonus12/Bonus12/Gemc/RunClara2/runLocal/filesAdhikari4QuickTest.txt
+set outputFilePrefix    recBYc
+#set outputFilePrefix    recBY
+#set logDir             /u/home/adhikari/pdisk/Bonus12/Gemc/RunClara2/Gemc/HipoReading/Logs/
+set session             nBONUS12kpSession
+set description         nBONUS12kpDescription
+set threads             4
+#run local 
+    

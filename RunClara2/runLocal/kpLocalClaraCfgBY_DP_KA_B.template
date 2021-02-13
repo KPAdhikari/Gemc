@@ -1,0 +1,10 @@
+#set servicesFile        /u/home/adhikari/pdisk/Bonus12/Gemc/RunClara2/runLocal/FromBradleyYale/rgf-spring2020_mc.yaml
+set servicesFile        /u/home/adhikari/pdisk/Bonus12/Gemc/RunClara2/runLocal/rgf-spring2020_mcFrmBY_KpMod.yaml
+set fileList            /u/home/adhikari/pdisk/Bonus12/Gemc/RunClara2/runLocal/filesBY_DP_KA_B.txt
+set outputFilePrefix    recBYdpKaB
+set logDir              /w/hallb-scifs17exp/clas/claseg4/adhikari/Bonus12/Gemc/RunClara2/runLocal/Logs/
+set session             nBONUS12kpSession
+set description         nBONUS12kpDescription
+set threads             4
+#run local 
+    

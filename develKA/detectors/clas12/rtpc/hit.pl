@@ -41,7 +41,7 @@ sub define_hit
 	$hit{"signalThreshold"} = "73*eV";
 	$hit{"timeWindow"}      = "120*ns";  #0.1*ns
 	$hit{"prodThreshold"}   = "5*mm";  #0.1*mm
-	$hit{"maxStep"}         = "30*mm";    #"0.2*mm";
+	$hit{"maxStep"}         = "2*mm";    #kp: it was 30*mm; #"0.2*mm";
 	$hit{"delay"}           = "1*ns";
 	$hit{"riseTime"}        = "1*ns";
 	$hit{"fallTime"}        = "2*ns";

@@ -32,6 +32,8 @@ rgb_10GeV_D2: rgb_10GeV_D2.o
 testingdictionary: testingdictionary.o
 	$(CXX) -o testingdictionary $<   $(HIPOLIBS) $(LZ4LIBS) $(ROOTLIBS)
 
+plotLundEvents: plotLundEvents.o
+	$(CXX) -o plotLundEvents $< $(HIPOLIBS) $(LZ4LIBS) $(ROOTLIBS)
 
 clean:
 	@echo 'Removing all build files'

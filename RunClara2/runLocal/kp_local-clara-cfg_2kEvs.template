@@ -1,0 +1,15 @@
+#set servicesFile        /work/clas12/mhattawy/n_dvcs_proposal/jobs/submitting_jobs/reconstruction.yaml
+set servicesFile        /w/hallb-scifs17exp/clas/claseg4/adhikari/Bonus12/Gemc/RunClara/local-clara/reconstruction.yaml
+#set files               /work/clas12/mhattawy/n_dvcs_proposal/myClara/plugins/clas12/5000_40_12Jul.hipo
+#set files               /w/hallb-scifs17exp/clas/claseg4/adhikari/Bonus12/Gemc/HipoReading/out_ep_34118_20_15kEvs.hipo
+set files               /w/hallb-scifs17exp/clas/claseg4/adhikari/Bonus12/Gemc/devel/out_ep_34118_20_2kEvs.hipo
+#set outputDir           /work/clas/bonus/mhattawy/jobs/clara_out_hipo_files/
+set outputDir            /w/hallb-scifs17exp/clas/claseg4/adhikari/Bonus12/Gemc/HipoReading/
+set outputFilePrefix    rec_out_
+set logDir              /w/hallb-scifs17exp/clas/claseg4/adhikari/Bonus12/Gemc/HipoReading/Logs/
+set session             N_BONUS12_DVCS_session
+set description         N_BONUS12_DVCS_description
+#set threads             4
+set threads             2
+run local 
+    

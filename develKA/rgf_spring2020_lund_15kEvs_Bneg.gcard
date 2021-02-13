@@ -41,7 +41,7 @@
 
 	<!-- you can scale the fields here. Remember torus -1 means e- INBENDING  -->
 	<option name="SCALE_FIELD" value="TorusSymmetric, -1"/>
-	<option name="SCALE_FIELD" value="clas12-newSolenoid, 0.756"/>
+	<option name="SCALE_FIELD" value="clas12-newSolenoid, -0.756"/>
 
 	<!-- hall field  -->
 	<option name="HALL_FIELD"  value="clas12-newSolenoid"/>
@@ -56,7 +56,7 @@
 
 	<option name="PHYSICS" value="FTFP_BERT + STD + Optical"/>
 
-	<option name="OUTPUT"   value="evio, out_ep_34118_20_15kEvs_kaBv2neg.evio"/>
+	<option name="OUTPUT"   value="evio, out_ep_34118_20_15kEvs_kaBnegTfixd.evio"/>
 
 	<option name="INPUT_GEN_FILE" value="LUND, lund/ep_34118_20.lund"/> 
 
@@ -65,7 +65,10 @@
 
 
 	<!--  Run Number 11, picked up by digitization routines -->
-	<option name="RUNNO"    value="11" />
+	<!-- Bradley Y. Email 1/28/21:  The v59.2 parameters have been set for run 10. -->
+ 	<!--              Previously, we thought that simulated runs were tagged '11'. -->
+	<!-- <option name="RUNNO"    value="11" /> -->
+        <option name="RUNNO"    value="10" />
 	<option name="DIGITIZATION_VARIATION"  value="rgf_spring2020" />
 
 	<!--  Do not track staff after the apex -->

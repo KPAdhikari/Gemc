@@ -1,0 +1,11 @@
+set servicesFile        /u/home/adhikari/pdisk/Bonus12/Gemc/RunClara2/runLocal/reconstruction.yaml
+#set servicesFile        /u/home/adhikari/pdisk/Bonus12/Gemc/RunClara2/ClaraUserData/config/reconstructionKpDebug.yaml
+#set fileList            /u/home/adhikari/pdisk/Bonus12/Gemc/RunClara2/ClaraUserData/config/filesAdhikari4Debug.txt
+set fileList            /u/home/adhikari/pdisk/Bonus12/Gemc/RunClara2/runLocal/filesAdhikari.txt
+set outputFilePrefix    recKp
+#set logDir              /u/home/adhikari/pdisk/Bonus12/Gemc/RunClara2/Gemc/HipoReading/Logs/
+set session             nBONUS12kpSession
+set description         nBONUS12kpDescription
+set threads             4
+#run local 
+    

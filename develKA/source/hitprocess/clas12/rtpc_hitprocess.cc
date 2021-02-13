@@ -241,8 +241,11 @@ map<string, double> rtpc_HitProcess :: integrateDgt(MHit* aHit, int hitn)
             
 	  tdc=t_s2pad+t_gap+shift_t; //kp:
 	  adc=1000.0*DiffEdep; //cludge for tiny ADC numbers
-
-	  double z_pos = (z_cm+delta_z)*10.0;// must be mm
+	  //adc = 0.5 + adc; //kp: For debugging purpose to avoid lots of zeros (due to int typecasting below)
+	  //adc = 100000*DiffEdep;//kp: For same reason as bove 
+	  
+	  //double z_pos = (z_cm+delta_z)*10.0;// must be mm
+	  double z_pos = z_cm*10.0 + delta_z;// must be mm
 	  int col = -999;
 	  int row = -999;
  

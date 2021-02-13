@@ -13,6 +13,7 @@ develKA/out*.hipo
 develKA/*.evio
 develKA/*.hipo
 
+
 ######## Files from HipoReading to be ignored by Git ###########
 HipoReading/*evio
 HipoReading/*hipo
@@ -22,10 +23,20 @@ HipoReading/simDataND/*
 HipoReading/c_analysis/*.o
 HipoReading/c_analysis/cfigs/*
 HipoReading/c_analysis/figs/*
+HipoReading/c_analysis/tmp
+HipoReading/c_analysis/pdf_doc
 
 ######## Files from HipoReading  ###########
 
 ######## Files from HipoReading to be ignored by Git ###########
+
+###### Files to be ignored from RunClara2 ######
+RunClara2/ClaraUserData
+RunClara2/OpWdDefaultYaml
+RunClara2/run_local
+RunClara2/runLocal/Logs
+#RunClara2/runLocal/TmpDir
+
 
 ###### Temporarily ignoring some folders ######
 BatchOp
@@ -34,7 +45,6 @@ develND
 develTst
 hipo4cpp
 RunClara
-RunClara2
 GEMC_examples
 MHcpdStuff/bonus_analysis_fromMH
 develComDontDelIt

@@ -56,7 +56,7 @@
 
 	<option name="PHYSICS" value="FTFP_BERT + STD + Optical"/>
 
-	<option name="OUTPUT"   value="evio, out_ep_34118_20_15kEvs_kaBv2Dbg.evio"/>
+	<option name="OUTPUT"   value="evio, out_ep_34118_20_15kEvs_kaBv2Adc1hkDEdep.evio"/>
 
 	<option name="INPUT_GEN_FILE" value="LUND, lund/ep_34118_20.lund"/> 
 

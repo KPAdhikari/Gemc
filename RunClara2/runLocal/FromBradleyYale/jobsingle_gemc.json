@@ -1,0 +1,9 @@
+{
+    "model": "rec",
+    "runGroup": "rgf",
+    "tag": "adhikari",
+    "outDir": "/work/clas12/byale/simulation/cook",
+    "inputs": "/work/clas12/byale/simulation/cook/gemc_hipo",
+    "coatjava": "6.5.11",
+    "reconYaml": "/work/clas12/byale/simulation/yaml/rgf-spring2020_mc.yaml"
+}

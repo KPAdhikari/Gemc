@@ -1,0 +1,6 @@
+#! /bin/tcsh -f 
+
+#alias myClara $CLARA_HOME/clara-shell
+#/work/clas12/mhattawy/n_dvcs_proposal/myClara/bin/clara-shell kp_local-clara-cfg.template
+/work/clas12/rg-f/software/myClara/bin/clara-shell kp_local-clara-cfg.template
+
